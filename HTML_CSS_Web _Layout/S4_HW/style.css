@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding-top: 26px;
+    padding-bottom: 20px;
+    background: rgb(34, 34, 34);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_logo1 {
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+
+.menu_logo2 {
+    padding-top: 28px;
+    padding-bottom: 20px;
+}
+
+.nav_menu_left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 41px;
+}
+
+.menu_logo3 {
+    padding-top: 30px;
+    padding-bottom: 22px;
+}
+
+.menu_logo4 {
+    padding-top: 26px;
+    padding-bottom: 20px;
+}
+
+.menu_logo5 {
+    padding-top: 20px;
+    padding-bottom: 26px;
+}
+
+.nav_menu_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 33px;
+}
+
+.top_content {
+    background: rgb(241, 228, 230);
+
+    background: rgb(241, 228, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+}
+
+.top_info {
+    padding-top: 290px;
+    padding-bottom: 381px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.top_title {
+    Font weight: 900;
+    Font size: 48px;
+    Row height: 1px;
+    Letter spacing: 0%;
+    Align: Align left;
+    width: 377px;
+}
+
+.top_subtitle {
+    Font weight: 700;
+    Font size: 32px;
+    Row height: 1px;
+    Letter spacing: 0%;
+    Align: Align left;
+}
+
+.fashion {
+    color: rgb(241, 109, 127);
+}
+
+.container_2 {
+    padding-top: 62px;
+    padding-bottom: 88px;
+
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+}
+
+.item {
+    background: rgba(33, 22, 22, 0.7);
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.item1 {
+    background-image: url(img/img_1.svg);
+}
+
+.item2 {
+    background-image: url(img/img_2.svg);
+}
+
+.item3 {
+    background-image: url(img/img_3.svg);
+}
+
+.item_big {
+    background-image: url(img/img_4.svg);
+    block-size: no repeat;
+}
+
+.item_big {
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    grid-column: span 3;
+}
+
+.content_info {
+    font-size: 16px;
+    font-weight: 400;
+    Row height: 1px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgb(255, 255, 255)
+}
+
+.content_for {
+    font-size: 24px;
+    font-weight: 700;
+    Row height: 1px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgb(241, 109, 127);
+}
+
+.container_3 {}
+
+.header_3 {
+    padding-top: 8px;
+    padding-bottom: 47px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.h2_cont_3 {
+    color: rgb(34, 34, 34);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.paragraph_cont_3 {
+    color: rgb(159, 159, 159);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.block {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+}
+
+.block1, .block2, .block3, .block4, .block5, .block6 {
+
+
+    padding-top: 0px;
+    padding-bottom: 20px;
+
+    background: rgb(248, 248, 248);
+}
+
+.h2_block {
+    width: 314px;
+
+    padding-top: 24px;
+
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.paragraph_block {
+    padding-top: 16px;
+
+    color: rgb(93, 93, 93);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.h3_block {
+    padding-top: 16px;
+
+    color: rgb(241, 109, 127);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.dropdown {
+    padding-top: 48px;
+    padding-bottom: 39px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button3 {
+    padding-top: 14.50px;
+    padding-bottom: 13.50px;
+    border: 1px solid rgb(255, 106, 106);
+    background: rgb(241, 109, 127);
+}
+
+.p_dropdown {
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
