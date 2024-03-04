@@ -332,3 +332,42 @@ a {
         justify-content: center;
     }
 }
+
+@media(max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 171.50px);
+        padding-right: calc(50% - 171.50px);
+    }
+
+    .top_img {
+        display: none;
+    }
+
+    .top_title {
+        Font size: 38px;
+
+    }
+
+    .top_subtitle {
+
+        Font size: 20px;
+    }
+
+    .container_2 {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .block {
+        margin-top: 65px;
+        margin-bottom: 42px;
+        grid-template-columns: repeat(1, 359px);
+        justify-content: center;
+        gap: 17px;
+    }
+
+}
