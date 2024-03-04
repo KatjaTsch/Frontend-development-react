@@ -7,6 +7,11 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+/* .center_1 {
+    padding-left: calc(50% - 565px);
+    padding-right: calc(50% - 565px);
+} */
+
 .center {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
@@ -70,14 +75,16 @@ a {
     gap: 33px;
 }
 
-.top_content {
+.container_1 {
     background: rgb(241, 228, 230);
+}
 
+.top_content {
     background: rgb(241, 228, 230);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 62px;
+    gap: 57px;
 }
 
 .top_info {
@@ -155,7 +162,7 @@ a {
 .content_info {
     font-size: 16px;
     font-weight: 400;
-    Row height: 1px;
+    row height: 1px;
     letter-spacing: 0%;
     text-align: center;
     color: rgb(255, 255, 255)
@@ -164,13 +171,11 @@ a {
 .content_for {
     font-size: 24px;
     font-weight: 700;
-    Row height: 1px;
+    row height: 1px;
     letter-spacing: 0%;
     text-align: center;
     color: rgb(241, 109, 127);
 }
-
-.container_3 {}
 
 .header_3 {
     padding-top: 8px;
@@ -209,8 +214,6 @@ a {
 }
 
 .block1, .block2, .block3, .block4, .block5, .block6 {
-
-
     padding-top: 0px;
     padding-bottom: 20px;
 
@@ -263,18 +266,69 @@ a {
 }
 
 .button3 {
-    padding-top: 14.50px;
-    padding-bottom: 13.50px;
     border: 1px solid rgb(255, 106, 106);
-    background: rgb(241, 109, 127);
+    background: none;
 }
 
 .p_dropdown {
-    color: rgb(255, 255, 255);
-    font-family: Lato;
+    padding-top: 15px;
+    padding-bottom: 14px;
+
+    color: rgb(242, 99, 118);
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0%;
     text-align: left;
+    font-family: "Lato", sans-serif;
+}
+
+@media(max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 360px);
+        padding-right: calc(50% - 360px);
+    }
+
+    .top_img {
+        max-width: 360px;
+    }
+
+    .top_and_subtitle {
+        max-width: 283px;
+    }
+
+    .top_title {
+        Font weight: 900;
+        Font size: 44px;
+
+    }
+
+    .top_subtitle {
+        Font weight: 700;
+        Font size: 24px;
+    }
+
+    .top_info {
+        padding-top: 120px;
+        padding-bottom: 130px;
+    }
+
+    /* .container_2 {
+        margin-top: 65px;
+        margin-bottom: 110px;
+    } */
+
+    .container_2 {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(3, 233px);
+        justify-content: center;
+    }
+
+    .block {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(2, 360px);
+        justify-content: center;
+    }
 }
