@@ -33,14 +33,25 @@ a {
     align-items: center;
 }
 
+.header_link {
+    transition: all 3s;
+}
+
+.header_link:hover path {
+    fill: rgb(241, 109, 127);
+    transition: all 0.3s;
+}
+
 .menu_logo1 {
     padding-top: 18px;
     padding-bottom: 19px;
+    transition: all 0.3s;
 }
 
 .menu_logo2 {
     padding-top: 28px;
     padding-bottom: 20px;
+    transition: all 0.3s;
 }
 
 .nav_menu_left {
@@ -55,16 +66,19 @@ a {
 .menu_logo3 {
     padding-top: 30px;
     padding-bottom: 22px;
+    transition: all 0.3s;
 }
 
 .menu_logo4 {
     padding-top: 26px;
     padding-bottom: 20px;
+    transition: all 0.3s;
 }
 
 .menu_logo5 {
-    padding-top: 20px;
-    padding-bottom: 26px;
+    padding-top: 26px;
+    padding-bottom: 20px;
+    transition: all 0.3s;
 }
 
 .nav_menu_right {
@@ -77,6 +91,26 @@ a {
 
 .container_1 {
     background: rgb(241, 228, 230);
+}
+
+.item {
+    transition: transform 1s;
+}
+
+.item1:hover {
+    transform: translate(200px, -20px) scale(1.3);
+}
+
+.item2:hover {
+    transform: translateY(-20px) scale(1.3);
+}
+
+.item3:hover {
+    transform: translate(-200px, -20px) scale(1.3);
+}
+
+.item_big:hover {
+    transform: translateY(-100px) scale(1.3);
 }
 
 .top_content {
@@ -266,8 +300,19 @@ a {
 }
 
 .button3 {
-    border: 1px solid rgb(255, 106, 106);
+    display: block;
+    border: 1px solid rgb(197, 110, 69);
     background: none;
+    margin-bottom: 95px;
+    transition: all 0.3s;
+}
+
+.p_dropdown:hover {
+    color: white;
+}
+
+.button3:hover {
+    background-color: rgb(197, 110, 69);
 }
 
 .p_dropdown {
@@ -282,6 +327,169 @@ a {
     text-align: left;
     font-family: "Lato", sans-serif;
 }
+
+.about {
+    background: rgb(34, 34, 36);
+    padding-top: 104px;
+    padding-bottom: 103px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_info {
+    color: rgb(251, 251, 251);
+    font-size: 19.96px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Lato", sans-serif;
+
+    padding-top: 28px;
+    padding-bottom: 16px;
+}
+
+.about_paragraph {
+    color: rgb(251, 251, 251);
+    font-size: 13.97px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.contacts {
+    background: url(img/contacts_bcg.png) no-repeat center;
+    background-size: cover;
+    background-color: rgba(244, 244, 244, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 224px;
+}
+
+.item_contact {
+    padding-top: 97px;
+    padding-bottom: 126px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts_paragraph {
+    color: rgb(34, 34, 36);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.h2_subscr {
+    color: rgb(34, 34, 36);
+    font-size: 24px;
+    font-weight: 700px;
+    line-height: 167.2%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.p_subscr {
+    color: rgb(34, 34, 36);
+    font-size: 18px;
+    font-weight: 40px;
+    line-height: 167.2%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.item_email {
+    padding-top: 150px;
+    padding-bottom: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.em {
+    background: rgb(225, 225, 225);
+    color: rgb(34, 34, 36);
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.subscribe {
+    background: rgb(241, 109, 127);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.footer {
+    background: rgb(34, 34, 36);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(251, 251, 251);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 655px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7.5px;
+}
+
+.social_linc:hover path {
+    fill: rgb(241, 109, 127);
+    transition: all 0.3s;
+}
+
+.social_linc:active path {
+    fill: rgb(255, 191, 0);
+}
+
 
 @media(max-width: 1024px) {
     .center {
@@ -300,7 +508,6 @@ a {
     .top_title {
         Font weight: 900;
         Font size: 44px;
-
     }
 
     .top_subtitle {
@@ -330,6 +537,53 @@ a {
         gap: 16px;
         grid-template-columns: repeat(2, 360px);
         justify-content: center;
+    }
+
+    .about {
+        padding-top: 48px;
+        padding-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48.5px;
+    }
+
+    .article {
+        max-width: 360px;
+    }
+
+    .contacts {
+        padding-top: 64px;
+        padding-bottom: 219px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .contacts_paragraph {
+        margin-top: 27px;
+    }
+
+    .item_contact {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .item_email {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 27px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 305px;
     }
 }
 
@@ -368,6 +622,27 @@ a {
         grid-template-columns: repeat(1, 359px);
         justify-content: center;
         gap: 17px;
+    }
+
+    .about {
+        gap: 46.73px;
+        padding-top: 48px;
+        padding-bottom: 81px;
+    }
+
+    .contacts {
+        padding-top: 64px;
+        padding-bottom: 110px;
+    }
+
+    .footer {
+        padding-top: 43px;
+        padding-bottom: 9px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
     }
 
 }
