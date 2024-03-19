@@ -462,6 +462,12 @@ a {
     padding-right: 10px;
 }
 
+.subscribe:hover {
+    transition: all 0.3s;
+    transition: transform 1s;
+    transform: translate(0px, 0px) scale(1.1);
+}
+
 .footer {
     background: rgb(34, 34, 36);
     padding-top: 30px;
