@@ -12,11 +12,30 @@
 }
 
 .container{
-    max-width: $colorSite;
+    max-width: $widthSite;
 }
 
 .title_h1{
    color: $colorSite;
+}
+details[open] summary::before{
+    content: "\2193";
+}
+
+.example{
+    &__heading{
+        // display: block; // убрать стрелку из details
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    // &__heading::webkid-details-marker{
+    //     display: none;
+    // }
+    &__heading::before{
+        content: "\2192";
+        
+    }
 }
 
 .nav {

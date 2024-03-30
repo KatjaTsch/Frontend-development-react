@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav__link {
   font-family: sans-serif;
   font-style: normal;
@@ -9,11 +10,24 @@
 }
 
 .container {
-  max-width: #8A2BE2;
+  max-width: 1200px;
 }
 
 .title_h1 {
   color: #8A2BE2;
+}
+
+details[open] summary::before {
+  content: "↓";
+}
+
+.example__heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.example__heading::before {
+  content: "→";
 }
 
 .nav {

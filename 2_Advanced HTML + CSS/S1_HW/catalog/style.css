@@ -107,6 +107,10 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
+.nav__link:hover {
+  color: #F16D7F;
+  transition: all 0.3s;
+}
 
 #burger {
   position: absolute;
@@ -125,7 +129,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 737px;
+  gap: 725px;
 }
 .top-head__heading {
   color: #F16D7F;
@@ -135,23 +139,30 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
-.top-head__breadcrumbs__link {
-  padding-top: 65px;
-  padding-bottom: 66px;
+
+.top-head__breadcrumbs {
+  display: flex;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
   letter-spacing: 0%;
   text-align: left;
+}
+.top-head__breadcrumbs__link:not(:last-child) {
   color: rgb(99, 99, 99);
 }
-.top-head__breadcrumbs__link__site {
-  color: #F16D7F;
+.top-head__breadcrumbs__link:not(:last-child)::after {
+  content: "/";
+  padding: 0px 8px;
+  padding-left: 0 8px;
+}
+.top-head__breadcrumbs__link:last-child {
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 0%;
   text-align: left;
+  color: #F16D7F;
 }
 
 .filter-sort {
@@ -384,6 +395,28 @@ ul {
 }
 .container__3__p__dropdown:hover {
   color: white;
+}
+
+.pagination {
+  margin-top: 48px;
+  margin-bottom: 96px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-item {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.page-link {
+  color: rgb(196, 196, 196);
+}
+.page-link[open] {
+  color: #F16D7F;
 }
 
 .about {
