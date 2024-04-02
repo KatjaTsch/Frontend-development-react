@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box-content">
+      <header class="header center">
+        <div class="header__left">
+          <a class="header__link" href="index.html"
+            ><svg
+              width="44.000000"
+              height="38.000000"
+              viewBox="0 0 44 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs>
+                <pattern
+                  id="pattern_190_12010"
+                  patternContentUnits="objectBoundingBox"
+                  width="1.000000"
+                  height="1.000000"
+                >
+                  <use
+                    xlink:href="#image190_1201_0"
+                    transform="matrix(0.022727,0,0,0.026316,0,0)"
+                  />
+                </pattern>
+                <image
+                  id="image190_1201_0"
+                  width="44.000000"
+                  height="38.000000"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+              <rect
+                id="Group 2"
+                width="44.000000"
+                height="38.000000"
+                fill="url(#pattern_190_12010)"
+                fill-opacity="1.000000"
+              />
+            </svg>
+          </a>
+          <a class="header__link" href="#"
+            ><svg
+              width="26.000000"
+              height="27.000000"
+              viewBox="0 0 26 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Forma 1"
+                d="M18.05 16.62C19.67 14.86 20.62 12.6 20.76 10.22C20.91 7.83 20.22 5.48 18.83 3.54C17.44 1.6 15.42 0.2 13.12 -0.43C10.82 -1.06 8.37 -0.87 6.19 0.09C4 1.06 2.22 2.74 1.13 4.87C0.05 6.99 -0.28 9.43 0.22 11.76C0.72 14.09 2 16.19 3.86 17.69C5.71 19.19 8.03 20 10.41 20C12.67 20 14.86 19.26 16.65 17.9L24.4 25.71C24.49 25.8 24.59 25.87 24.7 25.92C24.82 25.97 24.94 26 25.06 26C25.19 26 25.31 25.97 25.42 25.92C25.54 25.87 25.64 25.8 25.72 25.71C25.9 25.53 25.99 25.29 25.99 25.04C25.99 24.79 25.9 24.55 25.72 24.37L18.05 16.62ZM1.88 9.5C1.89 7.81 2.41 6.17 3.35 4.77C4.3 3.38 5.63 2.29 7.19 1.66C8.76 1.02 10.47 0.86 12.12 1.2C13.77 1.53 15.29 2.35 16.47 3.55C17.66 4.74 18.47 6.27 18.79 7.92C19.12 9.57 18.94 11.29 18.29 12.84C17.65 14.4 16.55 15.73 15.15 16.66C13.75 17.6 12.1 18.1 10.41 18.09C8.14 18.08 5.97 17.17 4.37 15.56C2.77 13.95 1.87 11.77 1.88 9.5Z"
+                fill="#E8E8E8"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="header__right">
+          <label for="burger"
+            ><img src="img/bureger-menu.svg" alt="burger-menu-icon"
+          /></label>
+          <input id="burger" type="checkbox" />
+          <nav class="nav">
+            <ul class="nav__box">
+              MENU
+              <li>
+                <a class="nav__header" href="#"
+                  >MAN
+                  <ul class="nav__categories">
+                    <li>
+                      <a class="nav__link" href="#">Accessories</a>
+                    </li>
+                    <li><a class="nav__link" href="#">Bags</a></li>
+                    <li><a class="nav__link" href="#">Denim</a></li>
+                    <li><a class="nav__link" href="#">T-Shirts</a></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a class="nav__header" href="#"
+                  >WOMAN
+                  <ul class="nav__categories">
+                    <li>
+                      <a class="nav__link" href="#">Accessories </a>
+                    </li>
+                    <li><a class="nav__link" href="#">Bags</a></li>
+                    <li><a class="nav__link" href="#">Denim</a></li>
+                    <li><a class="nav__link" href="#">T-Shirts</a></li>
+                    <li><a class="nav__link" href="#">Shirts</a></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a class="nav__header" href="#"
+                  >KIDS
+                  <ul class="nav__categories">
+                    <li><a class="nav__link" href="#">Accessories </a></li>
+                    <li><a class="nav__link" href="#">Bags</a></li>
+                    <li><a class="nav__link" href="#">Denim</a></li>
+                    <li><a class="nav__link" href="#">T-Shirts</a></li>
+                    <li><a class="nav__link" href="#">Shirts</a></li>
+                    <li><a class="nav__link" href="#">Bags</a></li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- <a class="header__link" href="#"
+          ><svg
+            width="32.000000"
+            height="23.000000"
+            viewBox="0 0 32 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc>Created with Pixso.</desc>
+            <defs />
+            <path
+              id="Forma 1"
+              d="M0 23L0 20.31L32 20.31L32 23L0 23ZM0 12.76L0 10.07L32 10.07L32 12.76L0 12.76ZM0 2.68L0 0L32 0L32 2.68L0 2.68Z"
+              fill="#E8E8E8"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a> -->
+          <a class="header__link" href="#"
+            ><svg
+              width="29.000000"
+              height="29.000000"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Forma 1"
+                d="M14.5 19.93C19 19.93 22.65 15.46 22.65 9.96C22.65 4.47 19 0 14.5 0C13.36 0.02 12.24 0.3 11.23 0.82C10.22 1.34 9.34 2.08 8.66 3C7.12 4.99 6.3 7.45 6.34 9.97C6.34 15.46 10 19.93 14.5 19.93ZM14.5 1.81C18 1.81 20.84 5.47 20.84 9.96C20.84 14.46 17.99 18.12 14.5 18.12C11 18.12 8.15 14.46 8.15 9.96C8.15 5.47 11 1.81 14.5 1.81ZM20.84 18.12C20.6 18.12 20.37 18.22 20.2 18.39C20.03 18.56 19.93 18.79 19.93 19.03C19.93 19.27 20.03 19.5 20.2 19.67C20.37 19.84 20.6 19.93 20.84 19.93C22.52 19.93 24.13 20.6 25.32 21.79C26.51 22.98 27.18 24.6 27.18 26.28C27.18 26.52 27.09 26.75 26.92 26.92C26.75 27.09 26.52 27.18 26.28 27.18L2.71 27.18C2.47 27.18 2.24 27.09 2.07 26.92C1.91 26.75 1.81 26.52 1.81 26.28C1.81 24.6 2.48 22.98 3.67 21.79C4.86 20.6 6.47 19.94 8.15 19.93C8.39 19.93 8.62 19.84 8.79 19.67C8.96 19.5 9.06 19.27 9.06 19.03C9.06 18.79 8.96 18.56 8.79 18.39C8.62 18.22 8.39 18.12 8.15 18.12C5.99 18.12 3.92 18.98 2.39 20.51C0.86 22.04 0 24.11 0 26.28C0 27 0.28 27.69 0.79 28.2C1.3 28.71 1.99 28.99 2.71 29L26.28 29C27 28.99 27.69 28.71 28.2 28.2C28.71 27.69 28.99 27 29 26.28C28.99 24.11 28.13 22.04 26.6 20.51C25.07 18.98 23 18.12 20.84 18.12Z"
+                fill="#E8E8E8"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
+          <a class="header__link" href="#"
+            ><svg
+              width="32.000000"
+              height="29.000000"
+              viewBox="0 0 32 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Forma 1"
+                d="M26.19 29C25.55 28.97 24.94 28.69 24.49 28.22C24.05 27.75 23.81 27.12 23.82 26.47C23.83 25.82 24.1 25.2 24.56 24.75C25.02 24.3 25.65 24.04 26.29 24.04C26.94 24.04 27.57 24.3 28.03 24.75C28.49 25.2 28.76 25.82 28.77 26.47C28.78 27.12 28.54 27.75 28.1 28.22C27.65 28.69 27.04 28.97 26.39 29L26.19 29ZM6.75 26.32C6.75 25.79 6.9 25.27 7.2 24.83C7.49 24.39 7.91 24.04 8.4 23.84C8.89 23.64 9.43 23.58 9.95 23.69C10.47 23.79 10.95 24.05 11.32 24.42C11.7 24.79 11.95 25.27 12.06 25.79C12.16 26.31 12.11 26.85 11.9 27.34C11.7 27.83 11.36 28.25 10.92 28.54C10.48 28.84 9.96 29 9.43 29C9.07 29 8.73 28.93 8.4 28.79C8.08 28.66 7.78 28.46 7.53 28.21C7.28 27.96 7.08 27.67 6.95 27.34C6.81 27.02 6.74 26.67 6.74 26.32L6.75 26.32ZM10.55 20.68C10.29 20.68 10.03 20.6 9.83 20.44C9.62 20.28 9.47 20.06 9.4 19.81L4.57 2.36L1.18 2.36C0.86 2.36 0.56 2.23 0.34 2.01C0.12 1.79 -0.01 1.49 -0.01 1.18C-0.01 0.86 0.12 0.56 0.34 0.34C0.56 0.12 0.86 0 1.18 0L5.46 0C5.72 -0.01 5.97 0.08 6.18 0.24C6.38 0.39 6.53 0.61 6.6 0.86L11.43 18.32L24.61 18.32L28.99 8.27L14.39 8.27C14.24 8.27 14.08 8.25 13.93 8.19C13.78 8.13 13.65 8.05 13.54 7.94C13.42 7.83 13.33 7.69 13.27 7.55C13.21 7.4 13.18 7.25 13.18 7.09C13.18 6.93 13.21 6.77 13.27 6.63C13.33 6.48 13.42 6.35 13.54 6.24C13.65 6.13 13.78 6.04 13.93 5.98C14.08 5.93 14.24 5.9 14.39 5.9L30.81 5.9C31 5.9 31.2 5.95 31.37 6.05C31.54 6.14 31.69 6.27 31.79 6.44C31.9 6.6 31.97 6.79 31.98 6.99C32 7.18 31.97 7.38 31.89 7.56L26.49 19.97C26.4 20.18 26.24 20.36 26.05 20.49C25.86 20.61 25.63 20.68 25.4 20.68L10.55 20.68Z"
+                fill="#E8E8E8"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
+        </div>
+      </header>
+      <header class="heading center">REGISTRATION</header>
+      <div class="registration-and-right center">
+        <div class="registration center">
+          <div class="registration__name">
+            <span class="registration__span">Your Name</span>
+            <form class="registration__form" action="#">
+              <p class="registration__ph">
+                <input
+                  class="registration__inp"
+                  type="text"
+                  required
+                  placeholder="First Name"
+                />
+              </p>
+              <p class="registration__ph">
+                <input
+                  class="registration__inp"
+                  type="text"
+                  required
+                  placeholder="Last Name"
+                />
+              </p>
+            </form>
+          </div>
+          <div class="registration__radio">
+            <p class="registration__radio registration__radio_ph">
+              <input type="radio" value="male" /> Male
+            </p>
+            <p class="registration__radio registration__radio_ph">
+              <input type="radio" value="female" /> Female
+            </p>
+          </div>
+          <div class="registration__email">
+            <span class="registration__span_email">Login details</span>
+            <form class="registration__form" action="#">
+              <p class="registration__ph">
+                <input
+                  class="registration__inp"
+                  type="email"
+                  required
+                  placeholder="Email"
+                />
+              </p>
+              <p class="registration__ph">
+                <input
+                  class="registration__inp"
+                  type="text"
+                  required
+                  placeholder="Password"
+                />
+              </p>
+            </form>
+          </div>
+          <p class="registration__under-reg">
+            Please use 8 or more characters, with at least 1 number and a
+            mixture of uppercase and lowercase letters
+          </p>
+          <button class="registration__button">
+            JOIN NOW
+            <svg
+              width="18.000000"
+              height="10.000000"
+              viewBox="0 0 18 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Vector"
+                d="M11.54 0.2C11.6 0.14 11.68 0.08 11.77 0.05C11.85 0.01 11.94 0 12.04 0C12.13 0 12.22 0.01 12.31 0.05C12.39 0.08 12.47 0.14 12.54 0.2L16.79 4.45C16.85 4.52 16.91 4.6 16.94 4.68C16.98 4.77 17 4.86 17 4.95C17 5.05 16.98 5.14 16.94 5.23C16.91 5.31 16.85 5.39 16.79 5.46L12.54 9.71C12.41 9.84 12.22 9.91 12.04 9.91C11.85 9.91 11.67 9.84 11.54 9.71C11.4 9.57 11.33 9.39 11.33 9.2C11.33 9.02 11.4 8.84 11.54 8.7L15.28 4.95L11.54 1.21C11.47 1.14 11.42 1.06 11.38 0.98C11.35 0.89 11.33 0.8 11.33 0.7C11.33 0.61 11.35 0.52 11.38 0.43C11.42 0.35 11.47 0.27 11.54 0.2Z"
+                fill="#FFFFFF"
+                fill-opacity="1.000000"
+                fill-rule="evenodd"
+              />
+              <path
+                id="Vector"
+                d="M0 4.95C0 4.77 0.07 4.59 0.2 4.45C0.34 4.32 0.52 4.25 0.7 4.25L15.58 4.25C15.77 4.25 15.95 4.32 16.08 4.45C16.21 4.59 16.29 4.77 16.29 4.95C16.29 5.14 16.21 5.32 16.08 5.46C15.95 5.59 15.77 5.66 15.58 5.66L0.7 5.66C0.52 5.66 0.34 5.59 0.2 5.46C0.07 5.32 0 5.14 0 4.95Z"
+                fill="#FFFFFF"
+                fill-opacity="1.000000"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="top-content__right center">
+          <div class="perks">
+            <h1 class="perks__h1">LOYALTY HAS ITS PERKS</h1>
+            <p class="perks__ph">
+              Get in on the loyalty program where you can earn points and unlock
+              serious perks. Starting with these as soon as you join:
+            </p>
+            <ul>
+              <li>15% off welcome offer</li>
+              <li>Free shipping, returns and exchanges on all orders</li>
+              <li>$10 off a purchase on your birthday</li>
+              <li>Early access to products</li>
+              <li>Exclusive offers & rewards</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="contacts center">
+        <item class="contacts__left">
+          <img
+            src="img/contacts_img_1.svg"
+            alt="contacts_img_1"
+            class="contacts__img"
+          />
+          <p class="contacts__paragraph">
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+            purus condimentum“
+          </p>
+        </item>
+        <item class="contacts__right">
+          <div class="contacts__subscribe__info">
+            <h2 class="contacts__h2">SUBSCRIBE</h2>
+            <p class="contacts__paragraph">FOR OUR NEWLETTER AND PROMOTION</p>
+          </div>
+          <form action="#">
+            <p class="contacts__email__ph">
+              <input
+                class="contacts__em"
+                type="email"
+                title="Заполните это поле"
+                required
+                placeholder="Enter Your Email"
+              />
+              <button class="contacts__subscribe" type="submit">
+                Subscribe
+              </button>
+            </p>
+          </form>
+        </item>
+      </section>
+      <footer class="footer center">
+        &copy;2023 Brand All Rights Reserved.
+        <div class="footer__icons">
+          <a href="#" class="footer__social__linc__sl__1"
+            ><svg
+              width="12.000000"
+              height="15.000000"
+              viewBox="0 0 12 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Vector"
+                d="M5.74 -0.8C2.55 -0.8 -0.6 1.33 -0.6 4.8C-0.6 7 0.63 8.25 1.38 8.25C1.68 8.25 1.86 7.38 1.86 7.14C1.86 6.85 1.13 6.23 1.13 5.02C1.13 2.51 3.03 0.73 5.48 0.73C7.6 0.73 9.16 1.94 9.16 4.16C9.16 5.82 8.5 8.93 6.36 8.93C5.59 8.93 4.92 8.37 4.92 7.56C4.92 6.38 5.75 5.24 5.75 4.02C5.75 1.95 2.83 2.32 2.83 4.82C2.83 5.35 2.9 5.93 3.13 6.41C2.7 8.26 1.83 11.03 1.83 12.94C1.83 13.53 1.91 14.11 1.96 14.7C2.07 14.82 2.02 14.81 2.18 14.75C3.74 12.59 3.69 12.17 4.39 9.35C4.78 10.08 5.76 10.48 6.55 10.48C9.84 10.48 11.32 7.24 11.32 4.33C11.32 1.22 8.66 -0.8 5.74 -0.8Z"
+                fill="#000000"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
+          <a href="#" class="footer__social__linc__sl__2">
+            <svg
+              width="16.000000"
+              height="13.000000"
+              viewBox="0 0 16 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Vector"
+                d="M13.41 2.74C13.42 2.88 13.42 3.02 13.42 3.16C13.42 7.5 10.15 12.49 4.16 12.49C2.31 12.49 0.6 11.95 -0.84 11.02C-0.58 11.05 -0.33 11.06 -0.06 11.06C1.46 11.06 2.87 10.54 3.99 9.66C2.55 9.63 1.35 8.68 0.94 7.39C1.14 7.41 1.34 7.44 1.56 7.44C1.85 7.44 2.14 7.4 2.41 7.33C0.92 7.02 -0.2 5.7 -0.2 4.11L-0.2 4.07C0.23 4.31 0.74 4.46 1.27 4.48C0.4 3.89 -0.18 2.89 -0.18 1.75C-0.18 1.14 -0.02 0.58 0.26 0.1C1.87 2.08 4.28 3.39 6.98 3.53C6.93 3.28 6.9 3.03 6.9 2.78C6.9 0.97 8.35 -0.5 10.16 -0.5C11.09 -0.5 11.94 -0.11 12.54 0.53C13.27 0.39 13.98 0.12 14.6 -0.26C14.36 0.5 13.85 1.14 13.17 1.55C13.83 1.48 14.46 1.29 15.05 1.04C14.6 1.69 14.05 2.27 13.41 2.74Z"
+                fill="#000000"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

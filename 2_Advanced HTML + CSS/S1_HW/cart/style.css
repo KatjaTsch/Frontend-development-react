@@ -121,70 +121,58 @@ ul {
   right: -232px;
 }
 
-.top-head {
-  padding-top: 59px;
-  padding-bottom: 60px;
-  background-color: rgb(248, 243, 244);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 725px;
-}
-.top-head__heading {
+.heading {
   color: #F16D7F;
-  font-family: Lato;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0%;
   text-align: left;
+  padding-top: 59px;
+  padding-bottom: 59px;
+  background: rgb(248, 243, 244);
 }
 
-.carts__content {
+.top-content {
+  margin: 0;
+  padding: 0;
   display: flex;
   gap: 128px;
 }
-
-.carts {
+.top-content__cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  width: 652px;
-  margin-top: 96px;
-  margin-bottom: 72px;
+  padding-top: 96px;
+  padding-bottom: 128px;
 }
-.carts__box {
+.top-content__box {
   background: rgb(255, 255, 255);
   box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 652px;
 }
-.carts__box__info {
+.top-content__info {
   display: flex;
   flex-direction: column;
-  padding: 22px 97px 62px 31px;
+  justify-content: center;
+  gap: 6px;
+  margin: 22px 97px 62px 31px;
 }
-.carts__box__info_h2 {
+.top-content__h5 {
   color: rgb(34, 34, 34);
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0%;
   text-align: left;
-  margin-bottom: 42px;
 }
-.carts__box__info_char {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-.carts__box__info__ph {
+.top-content__ph {
+  color: rgb(87, 87, 87);
   margin: 0;
   padding: 0;
   font-size: 22px;
@@ -193,40 +181,75 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
-.carts__box__info__ph_span_price {
-  color: #F16D7F;
+.top-content__ph_quan {
+  display: flex;
+  gap: 24px;
 }
-.carts__box__info__ph_span {
+.top-content__ph_input {
   color: rgb(101, 101, 101);
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
-}
-.carts__box__info__ph_qu {
-  display: flex;
-  gap: 24px;
-}
-.carts__box__info__ph_qu_number {
-  color: rgb(101, 101, 101);
   width: 40px;
 }
+.top-content__span {
+  color: rgb(111, 110, 110);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.top-content__span_price {
+  color: rgb(239, 91, 112);
+}
+.top-content__exit {
+  margin-top: 22px;
+  margin-bottom: 235px;
+  margin-right: 22px;
+}
+.top-content__svg:hover path {
+  fill: #F16D7F;
+}
+.top-content__buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 192px;
+  width: 652px;
+}
+.top-content__button {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(164, 164, 164);
+  padding: 16px 40px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.top-content__button:hover {
+  background-color: #F16D7F;
+  color: white;
+  transition: all 0.3s;
+}
 
-.carts__adress__basket {
-  margin-top: 113px;
+.contact-basket {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-
-.carts__adress__ph {
+.contact-basket__adress__ph {
+  width: 370px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 370px;
 }
-.carts__adress__ph_span {
+.contact-basket__adress__span {
   color: rgb(34, 34, 34);
   font-size: 16px;
   font-weight: 300;
@@ -234,7 +257,7 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
-.carts__adress__ph_inp {
+.contact-basket__adress__inp {
   border: 1px solid rgb(164, 164, 164);
   padding-top: 13px;
   padding-bottom: 16px;
@@ -246,7 +269,7 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
-.carts__adress__button {
+.contact-basket__adress__button {
   border: 1px solid rgb(164, 164, 164);
   background: rgb(255, 255, 255);
   width: 100px;
@@ -260,19 +283,23 @@ ul {
   padding-bottom: 10px;
   padding-left: 16px;
 }
-
-.carts__basket {
+.contact-basket__adress__button:hover {
+  background-color: #F16D7F;
+  color: white;
+  transition: all 0.3s;
+}
+.contact-basket__basket {
+  padding: 39px 50px 42px 0px;
   width: 370px;
   background: rgb(245, 243, 243);
 }
-.carts__basket__info {
+.contact-basket__basket__info {
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: flex-end;
-  padding: 39px 34px 21px 153px;
 }
-.carts__basket__info__h3 {
+.contact-basket__basket__h3 {
   color: rgb(74, 74, 74);
   font-size: 11px;
   font-weight: 400;
@@ -280,19 +307,37 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
-.carts__basket__info__h2 {
+.contact-basket__basket__sub {
+  color: rgb(74, 74, 74);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.contact-basket__basket__h2 {
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
   letter-spacing: 0%;
   text-align: left;
 }
-.carts__basket__button {
-  display: flex;
-  justify-content: center;
-  margin: 17px 43px 42px 44px;
+.contact-basket__basket__total {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #F16D7F;
 }
-.carts__basket__button__top {
+.contact-basket__basket__hr {
+  border: 1px solid #F16D7F;
+}
+.contact-basket__basket__button {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-basket__basket__button-top {
   padding: 15px 42px;
   background: rgb(241, 109, 127);
   border: 1px solid rgb(241, 109, 127);
@@ -302,29 +347,12 @@ ul {
   line-height: 19px;
   letter-spacing: 0%;
   text-align: left;
+  letter-spacing: 0;
 }
-
-.button-box {
-  margin-bottom: 128px;
-  margin-bottom: 128px;
-  display: flex;
-  gap: 192px;
-  align-items: center;
-}
-.button-box__butt {
-  border: 1px solid rgb(164, 164, 164);
-  background: rgb(255, 255, 255);
-}
-.button-box__butt__span {
-  display: flex;
-  justify-content: center;
-  margin: 17px 41px 16px 39px;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 17px;
-  letter-spacing: 0%;
-  text-align: left;
+.contact-basket__basket__button-top:hover {
+  background-color: #fff;
+  color: rgb(74, 74, 74);
+  transition: all 0.3s;
 }
 
 .contacts {

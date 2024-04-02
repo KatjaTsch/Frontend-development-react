@@ -120,116 +120,135 @@ ul{
             }
 }
 
-
-.top-head{
+.heading{
+    color: $colorSite;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
     padding-top: 59px;
-    padding-bottom: 60px;
-    background-color: rgb(248, 243, 244);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 725px;
-
-        &__heading{
-            color: $colorSite;
-            font-family: Lato;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 29px;
-            letter-spacing: 0%;
-            text-align: left;
-        }
+    padding-bottom: 59px;
+    background: rgb(248, 243, 244);
 }
-.carts__content{
-    display: flex;
-    gap: 128px
-}
-.carts{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
-    width: calc($widthSite/2 + 82px);
-    margin-top: 96px;
-    margin-bottom: 72px;
+
+.top-content{
+margin: 0;
+padding: 0;
+display: flex;
+gap: 128px;
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 96px;
+        padding-bottom: 128px;
+    }
     &__box{
         background: rgb(255, 255, 255);
         box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
         display: flex;
-    &__img{
-            
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        width: calc($widthSite/2 + 82px);
     }
     &__info{
+        
         display: flex;
         flex-direction: column;
-        padding: 22px 97px 62px 31px;
-        &_h2{
-            color: rgb(34, 34, 34);
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 29px;
-            letter-spacing: 0%;
-            text-align: left;
-            margin-bottom: 42px;  
-        }
-        &_char{
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 26px;
-            letter-spacing: 0%;
-            text-align: left;
-        }
-        &__ph{
-            margin: 0;
-            padding: 0;
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 26px;
-            letter-spacing: 0%;
-            text-align: left;
-            &_span_price{
-                color: $colorSite;
-            }
-            &_span{
-                color: rgb(101, 101, 101);
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 22px;
-                letter-spacing: 0%;
-                text-align: left;
-            }
-            &_qu{
-                display: flex;
-                gap: 24px;
-                &_number{
-                    color: rgb(101, 101, 101);
-                    width: 40px;
-                }
-            }
-        }
+        justify-content: center;
+        gap: 6px;
+        margin: 22px 97px 62px 31px;
     }
+    &__h5{
+        color: rgb(34, 34, 34);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
     }
-}
-
-.carts__adress__basket{
-  margin-top: 113px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;  
-}
-.carts__adress{
-    
     &__ph{
+        color: rgb(87, 87, 87);
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0%;
+        text-align: left;
+        &_quan{
+            display: flex;
+            gap: 24px;
+        }
+        &_input{
+            color: rgb(101, 101, 101);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0%;
+            text-align: left;
+            width: 40px;
+        }
+    }
+    &__span{
+        color: rgb(111, 110, 110);
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0%;
+        text-align: left;
+        &_price{
+            color: rgb(239, 91, 112);
+        }
+    }
+    &__exit{
+        margin-top: 22px;
+        margin-bottom: 235px;
+        margin-right: 22px;
+    }
+    &__svg:hover path{
+        fill: $colorSite;
+    }
+    &__buttons{
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        gap: 192px;
+        width: calc($widthSite/2 + 82px);
+    }
+    &__button{
+        background: rgb(255, 255, 255);
+        border: 1px solid rgb(164, 164, 164);
+        padding: 16px 40px;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__button:hover{
+        background-color: $colorSite;
+        color: white;
+        transition: all 0.3s;
+    }
+}
+.contact-basket{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;  
+    &__adress{
+        &__ph{
+        width: $thirdSite;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: $thirdSite;
-        &_span{
+        }
+        &__span{
             color: rgb(34, 34, 34);
             font-size: 16px;
             font-weight: 300;
@@ -237,7 +256,7 @@ ul{
             letter-spacing: 0%;
             text-align: left;
         }
-        &_inp{
+        &__inp{
             border: 1px solid rgb(164, 164, 164);
             padding-top: 13px;
             padding-bottom: 16px;
@@ -249,34 +268,36 @@ ul{
             letter-spacing: 0%;
             text-align: left;
         }
-    }
-    &__button{
-        border: 1px solid rgb(164, 164, 164);
-        background: rgb(255, 255, 255);
-        width: 100px;
-        color: rgb(74, 74, 74);
-        font-size: 11px;
-        font-weight: 300;
-        line-height: 13px;
-        letter-spacing: 0%;
-        text-align: left;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 16px;
-    }
-}
-
-.carts__basket{
-    width: $thirdSite;
-    
-    background: rgb(245, 243, 243);
-    &__info{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-end;
-        padding: 39px 34px 21px 153px;
-        
+        &__button{
+            border: 1px solid rgb(164, 164, 164);
+            background: rgb(255, 255, 255);
+            width: 100px;
+            color: rgb(74, 74, 74);
+            font-size: 11px;
+            font-weight: 300;
+            line-height: 13px;
+            letter-spacing: 0%;
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+        }
+        &__button:hover{
+            background-color: $colorSite;
+            color: white;
+            transition: all 0.3s;
+        }
+    }   
+    &__basket{
+        padding: 39px 50px 42px 0px;
+        width: $thirdSite;
+        background: rgb(245, 243, 243);
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: flex-end;
+        }
         &__h3{
             color: rgb(74, 74, 74);
             font-size: 11px;
@@ -284,9 +305,14 @@ ul{
             line-height: 13px;
             letter-spacing: 0%;
             text-align: left;
-            &_sub{
-    
-            }
+        }
+        &__sub{
+            color: rgb(74, 74, 74);
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 13px;
+            letter-spacing: 0%;
+            text-align: left;        
         }
         &__h2{
             font-size: 16px;
@@ -295,12 +321,22 @@ ul{
             letter-spacing: 0%;
             text-align: left;
         }
-    }
-    &__button{
-        display: flex;
-        justify-content: center;
-        margin: 17px 43px 42px 44px;
-        &__top{
+        &__total{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            letter-spacing: 0%;
+            text-align: left;
+            color: $colorSite;
+        }
+        &__hr{
+            border: 1px solid $colorSite;
+        }
+        &__button{
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__button-top{
             padding: 15px 42px;
             background: rgb(241, 109, 127);
             border: 1px solid rgb(241, 109, 127);
@@ -310,32 +346,12 @@ ul{
             line-height: 19px;
             letter-spacing: 0%;
             text-align: left;
+            letter-spacing: 0
         }
-    }
-    
-}
-
-.button-box{
-    margin-bottom: 128px;
-    
-    margin-bottom: 128px;
-    display: flex;
-    gap: 192px;
-    align-items: center;
-    &__butt{
-        border: 1px solid rgb(164, 164, 164);
-        background: rgb(255, 255, 255);
-        &__span{
-            display: flex;
-            justify-content: center;
-            margin: 17px 41px 16px 39px;
-            color: rgb(0, 0, 0);
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 17px;
-            letter-spacing: 0%;
-            text-align: left;
-            
+        &__button-top:hover{
+            background-color: #fff;
+            color: rgb(74, 74, 74);
+            transition: all 0.3s;
         }
     }
 }
