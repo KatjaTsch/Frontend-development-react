@@ -36,7 +36,6 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 859px;
     position: relative;
         &__left{
             display: flex;
@@ -62,6 +61,7 @@ ul{
 }
 
 .nav{
+    z-index: 1;
     background: rgb(255, 255, 255);
     box-shadow: 6px 4px 35px $colorText;
     width: 232px;
@@ -72,6 +72,7 @@ ul{
     right: 0;
     transition: right 0.3s;
         &__box{
+            
             color: $colorText;
             font-size: 14px;
             font-weight: 700;
@@ -130,7 +131,7 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 725px;
+    
 
         &__heading{
             color: $colorSite;
@@ -349,13 +350,13 @@ ul{
     }
     &__block{
         display: grid;
-        grid-template-columns: repeat(3, $thirdSite);
-        gap: $gapGrid;       
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        gap: 20px;     
     }
     &__img__block{
         width: 100%;
     }
-    &__block1, &__block2, &__block3, &__block4, &__block5, &__block6{
+    &__block4, &__block5, &__block6, &__block7, &__block8, &__block9, &__block10, &__block11, &__block12{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -434,8 +435,6 @@ ul{
     &__p__dropdown:hover{
         color: white;
     }
-
-
 }
 
 .pagination{
@@ -504,7 +503,7 @@ ul{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 224px;
+    
 
         &__left{
             padding-top: 97px;
@@ -608,7 +607,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 733px;
+    
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: $backBlockSite;
@@ -652,4 +651,113 @@ ul{
         }
 }
 
+@media(max-width: 1024px){
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+    .filter-sort{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container__3__block4, .container__3__block5, .container__3__block6, .container__3__block7, .container__3__block8, .container__3__block9, .container__3__block10, .container__3__block11, .container__3__block12{
+        min-width: 360px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        &__article{
+            max-width: 360px;
+        }
+    }
 
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        &__left{
+            padding-top: 54px;
+            padding-bottom: 48px;
+            max-width: 360px;
+        }
+        &__right{
+            padding-top: 0;
+            padding-bottom: 219px;
+            max-width: 360px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 171.50px);
+        padding-right: calc(50% - 171.50px);
+    }
+    // .header__right(:last-child) {
+    //     display: none;
+    // }
+    .header__link_mob{
+        display: none;
+    }
+    .top-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        padding-top: 24px;
+        padding-bottom: 46px;
+    }
+    .filter-sort{
+        color: rgb(111, 110, 110);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0%;
+        text-align: left;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .span{
+        left: -999999px;
+    }
+    .nav{
+        width: 160px;
+    }
+    .top-head__breadcrumbs__link:not(:last-child)::after{
+        content: '/';
+        // padding: 0px 3px;
+        padding-left:0px 3px;
+    }
+   
+    .filter{
+        position: absolute;
+        width: 200px;
+    }    
+    .filter__heading{
+        display: none;
+    }
+    .filter__svg{
+        width: 35px;
+        height: 35px;
+    }
+    .sort{
+        position: absolute;
+        padding-left: 85px;
+    }
+    .container__3{
+        margin-bottom: 40px;
+    }
+
+    .contacts{
+        padding-top: 54px;
+        padding-bottom: 110px;
+        gap: 59px;
+    }
+    .about{
+        margin-top: 64px;
+    }
+}
