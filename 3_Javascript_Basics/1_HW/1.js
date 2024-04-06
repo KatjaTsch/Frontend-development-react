@@ -15,4 +15,4 @@
 
 let temperatureC = prompt("Введите температуру в градусах Цельсия: ");
 let temperatureF = 9 / 5 * temperatureC + 32;
-console.log(`Цельсий: ${temperatureC}, Фаренгейт: ${temperatureF}`);
+console.log(alert(`Цельсий: ${temperatureC}, Фаренгейт: ${temperatureF}`));
