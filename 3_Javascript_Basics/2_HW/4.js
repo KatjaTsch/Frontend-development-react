@@ -29,6 +29,8 @@
 // }
 
 const number = Number(prompt("Введите число"));
-console.log(` едениц: ${number % 10}`);
-console.log(` десятков: ${Math.trunc((number % 100) / 10)}`);
-console.log(` сотен: ${Math.trunc((number % 1000) / 100)}`);
+console.log(
+  ` едениц: ${number % 10}; 
+  десятков: ${Math.trunc((number % 100) / 10)}; 
+  сотен: ${Math.trunc((number % 1000) / 100)}`
+);
