@@ -14,22 +14,14 @@
 число 32.
 */
 
-// const dayNumber = prompt("Введите целое число в интервале [1, 32)");
-// if (dayNumber >= 1 && dayNumber < 32) {
-//   console.log(
-//     prompt(
-//       `Число ${dayNumber} попадает в ${Math.ceil(
-//         dayNumber / 10
-//       )} декаду месяца.`
-//     )
-//   );
-// } else {
-//   console.log(`Неверное значение`);
-// }
-
-
-
-
+const dayNumber = Number.isInteger(prompt("Введите целое число в интервале [1, 32)"));
+if (dayNumber >= 1 && dayNumber < 32) {
+  console.log(
+    `Число ${dayNumber} попадает в ${Math.ceil(dayNumber / 10)} декаду месяца.`
+  );
+} else {
+  console.log(`Неверное значение`);
+}
 
 // **********************************************************************************************************************
 // {
