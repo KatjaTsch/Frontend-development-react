@@ -22,7 +22,7 @@ const sum = (x, y) => x + y;
 console.log(sum(1, 2));
 
 function difNumbers(x, y) {
-  return Math.max(x, y) - Math.min(x, y);
+  return Math.abs(x, y);
 }
 console.log(difNumbers(500, 1000));
 
