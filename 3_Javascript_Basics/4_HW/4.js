@@ -12,10 +12,11 @@ xxxx
 xxxxx
 */
 
-const arr = [];
-for (let i = 0; i < 21; i++) {
-  arr.push('x');
-  console.log(arr[i]);
-}
+// const arr = [];
+// for (let i = 0; i < 21; i++) {
+//     const newArray = arr.join('x')
+// //   arr.push('x');
+//   console.log(newArray[i]);
+// }
 
 

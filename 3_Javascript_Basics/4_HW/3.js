@@ -14,17 +14,22 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// const arr = [];
-// let summ = 0;
-// for (let i = 0; i < 5; i++) {
-//   arr.push(Math.trunc(Math.random(10) * 10));
-//   summ = summ + arr[i];
+const arr = [];
+let summ = 0;
+for (let i = 0; i < 5; i++) {
+  arr.push(Math.trunc(Math.random(10) * 10));
+  summ = summ + arr[i];
+}
+console.log(arr);
+console.log(summ);
+
+console.log(Math.min(... arr));
+console.log(arr.indexOf(3));
+
+// if (arr[i] === 3) {
+//     newArr = arr.push(arr.keys);
+//     console.log(newArr);
 // }
-// console.log(arr);
-// console.log(summ);
-
-// console.log(Math.min(... arr));
-
 
 
 
